@@ -29,13 +29,6 @@ class App extends Component {
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />
-        <footer>
-          Made with{" "}
-          <span style={{ color: "red", fontSize: "20px" }}>&hearts;</span>, by{" "}
-          <a href="https://www.linkedin.com/in/k-g-prajwal-a6b3b517a/">
-            K G Prajwal
-          </a>
-        </footer>
       </div>
     );
   }
