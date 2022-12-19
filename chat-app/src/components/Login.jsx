@@ -10,9 +10,9 @@ const Login = () => {
     e.preventDefault();
 
     const authObject = {
-      "Project-ID": "a4c9cf71-5754-4386-a29f-3e16fef47098",
-      "User-Name": username,
-      "User-Secret": password,
+      "Project-ID": "8d2396dd-d9ad-48bb-8b4b-a8dce89f5a23",
+      "User-Name": 'kaki',
+      "User-Secret": 'kaki123',
     };
 
     try {
@@ -22,6 +22,7 @@ const Login = () => {
       localStorage.setItem("username", username);
       localStorage.setItem("password", password);
       window.location.reload();
+      console.log(username);
     } catch (error) {
       setError("Incorrect credentials!");
     }
